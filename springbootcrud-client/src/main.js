@@ -39,27 +39,27 @@ Vue.mixin({
     }
   },
   methods: {
-    customFetch(apiUrl, httpOptions) {
+    customFetch (apiUrl, httpOptions) {
       httpOptions.params.page = httpOptions.params.page - 1; // change the current page index (index must start from 0)
       return this.$http.get(apiUrl, httpOptions)
     },
-    successFloat(message) {
+    successFloat (message) {
       this.$message.success({message: message, showClose: true, duration: 6000})
     },
-    errorFloat(message) {
+    errorFloat (message) {
       this.$message.error({message: message, showClose: true, duration: 6000})
     },
-    showDefaultError(e) {
+    showDefaultError (e) {
       console.log(e);
       this.errorFloat(this.$message.errorAction)
     },
-    handleError(e) {
+    handleError (e) {
       this.showDefaultError(e)
     },
-    getPersons() {
+    getPersons () {
       return this.$http.get('persons?size=1000')
     },
-    getSuppliers() {
+    getSuppliers () {
       return this.$http.get('suppliers?size=1000')
     }
   }
@@ -69,6 +69,6 @@ Vue.mixin({
 new Vue({
   el: '#app',
   router,
-  components: {App},
+  components: { App },
   template: '<App/>'
 });
