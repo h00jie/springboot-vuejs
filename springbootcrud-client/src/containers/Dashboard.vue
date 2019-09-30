@@ -16,21 +16,21 @@
 </template>
 
 <script>
-  import nav from '../_nav'
+import nav from '../_nav'
 
-  export default {
-    name: 'dashboard',
-    components: {},
-    data() {
-      return {
-        nav: nav.items
-      }
-    },
-    methods: {
-      redirect(navItem) {
-        this.$router.push(navItem.url)
-      }
+export default {
+  name: 'dashboard',
+  components: {},
+  data () {
+    return {
+      nav: nav.items
+    }
+  },
+  methods: {
+    redirect (navItem) {
+      this.$router.push(navItem.url)
     }
   }
+}
 
 </script>

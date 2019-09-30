@@ -8,9 +8,9 @@
 export default {
   name: 'HelloWorld',
   data () {
-      return {
-        msg: 'Welcome to a simple Vue.js App'
-      }
+    return {
+      msg: 'Welcome to a simple Vue.js App'
+    }
   }
 }
 </script>
