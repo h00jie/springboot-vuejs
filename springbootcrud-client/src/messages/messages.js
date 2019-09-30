@@ -12,6 +12,6 @@ const messages = {
   yes: 'Ναι',
   no: 'Όχι',
   ok: 'Οκ'
-};
+}
 
 export default messages

@@ -11,7 +11,7 @@ import axios from 'axios'
 import VueEvents from 'vue-events'
 import messages from './messages/messages'
 
-Vue.prototype.$apiURL = 'http://127.0.0.1:8081/api/';
+Vue.prototype.$apiURL = 'http://127.0.0.1:8081/api/'
 
 Vue.prototype.$http = axios.create({
   baseURL: Vue.prototype.$apiURL,
@@ -20,12 +20,12 @@ Vue.prototype.$http = axios.create({
     put: {'Content-Type': 'application/json'},
     patch: {'Content-Type': 'application/json'}
   }
-});
+})
 
-Vue.config.productionTip = false;
-Vue.use(Element, {locale});
-Vue.use(VueEvents);
-Vue.prototype.$messages = messages;
+Vue.config.productionTip = false
+Vue.use(Element, {locale})
+Vue.use(VueEvents)
+Vue.prototype.$messages = messages
 
 // inject helper functions
 Vue.mixin({
@@ -40,7 +40,7 @@ Vue.mixin({
   },
   methods: {
     customFetch (apiUrl, httpOptions) {
-      httpOptions.params.page = httpOptions.params.page - 1; // change the current page index (index must start from 0)
+      httpOptions.params.page = httpOptions.params.page - 1 // change the current page index (index must start from 0)
       return this.$http.get(apiUrl, httpOptions)
     },
     successFloat (message) {
@@ -50,7 +50,7 @@ Vue.mixin({
       this.$message.error({message: message, showClose: true, duration: 6000})
     },
     showDefaultError (e) {
-      console.log(e);
+      console.log(e)
       this.errorFloat(this.$message.errorAction)
     },
     handleError (e) {
@@ -63,7 +63,7 @@ Vue.mixin({
       return this.$http.get('suppliers?size=1000')
     }
   }
-});
+})
 
 /* eslint-disable no-new */
 new Vue({
@@ -71,4 +71,4 @@ new Vue({
   router,
   components: { App },
   template: '<App/>'
-});
+})

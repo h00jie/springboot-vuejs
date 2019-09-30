@@ -7,7 +7,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Persons from '@/components/Persons'
 import Suppliers from '@/components/Suppliers'
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
   mode: 'history', // Demo is living in GitHub.io, so required!
