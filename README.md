@@ -45,3 +45,6 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 ```
+
+
+Also i have implemented some tests for the Suppliers endpoints using JUnit & TestRestTemplate.
