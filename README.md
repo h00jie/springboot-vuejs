@@ -9,7 +9,7 @@
 Create an empty database with name: springbootcrud
 
 ◦ Open the file: springbootcrud-webapp/src/main/resources/application.properties and
-  modify the following properties, depending on your MySQL installation:
+  modify the following properties or depending on your MySQL installation:
 ◦ spring.datasource.username=root
 ◦ spring.datasource.password=password
 
@@ -20,15 +20,15 @@ mvn clean install
 mvn spring-boot:run
 
 ```
-
+ 
 ##Backend Information
-
+>
 >##Rest endpoints for Supplier & Person Entities
-
->localhost:8081/api/suppliers
+>
+> localhost:8081/api/suppliers
 >
 >localhost:8081/api/persons
-
+>
 >##HAL Browser for Endpoint Documentation
 >
 >localhost:8081/api
