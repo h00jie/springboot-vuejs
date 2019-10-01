@@ -20,19 +20,19 @@ mvn clean install
 mvn spring-boot:run
 
 ```
->
-##Backend Information
->
->##Rest endpoints for Supplier & Person Entities
->
-> localhost:8081/api/suppliers
->
->localhost:8081/api/persons
->
->##HAL Browser for Endpoint Documentation
->
->localhost:8081/api
 
+##Backend Information
+``` bash
+##Rest endpoints for Supplier & Person Entities
+
+ localhost:8081/api/suppliers
+
+localhost:8081/api/persons
+
+##HAL Browser for Endpoint Documentation
+
+localhost:8081/api
+```
 ## Frontend Build/Run Setup
 ``` bash
 # install dependencies
