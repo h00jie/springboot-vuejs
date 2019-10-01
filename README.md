@@ -21,19 +21,20 @@ mvn spring-boot:run
 
 ```
 
-## Backend Build/Run Setup
+## Backend Information
 
 ``` bash
-##Rest endpoints for Supplier & Person Entities
+# Rest endpoints for Supplier & Person Entities
 
  localhost:8081/api/suppliers
 
-localhost:8081/api/persons
+ localhost:8081/api/persons
 
-##HAL Browser for Endpoint Documentation
+# HAL Browser for Endpoint Documentation
 
-localhost:8081/api
+ http://localhost:8081/api
 ```
+
 ## Frontend Build/Run Setup
 ``` bash
 # install dependencies
