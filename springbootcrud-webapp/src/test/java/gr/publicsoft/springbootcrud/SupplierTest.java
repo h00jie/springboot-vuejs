@@ -87,6 +87,5 @@ public class SupplierTest {
         restTemplate.delete(suppliersPath, created.getId());
         ResponseEntity<Supplier> deleteResponce = restTemplate.exchange(suppliersPath, HttpMethod.DELETE, HttpEntity.EMPTY,Supplier.class,created.getId());
         assertEquals(404, deleteResponce.getStatusCodeValue());
-
     }
 }
