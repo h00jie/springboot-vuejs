@@ -6,6 +6,13 @@
 ## Backend Build/Run Setup
 
 ``` bash
+Create an empty database with name: springbootcrud
+
+◦ Open the file: springbootcrud-webapp/src/main/resources/application.properties and
+  modify the following properties, depending on your MySQL installation:
+◦ spring.datasource.username=root
+◦ spring.datasource.password=password
+
 # Build project from the root folder
 mvn clean install 
 
